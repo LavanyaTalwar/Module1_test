@@ -1,0 +1,232 @@
+/* universal css -- to be applied to all components  */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+/* universal h1 css -- to be applied to all components  */
+h1 {
+    font-family: Test_Fonts1;
+}
+/* universal h2 css -- to be applied to all components  */
+h2 {
+    font-family: Test_Fonts3;
+}
+/* setting up the font  */
+@font-face {
+    font-family: Test_Fonts1;
+    src: url("/Module1_test/Font/WorkSans-Regular.woff");
+}
+
+@font-face {
+    font-family: Test_Fonts1;
+    src: url("/Module1_test/Font/NoticiaText-Bold.woff");
+}
+
+@font-face {
+    font-family: Test_Fonts3;
+    src: url("/Module1_test/Font/WorkSans-Medium.woff");
+}
+
+@font-face {
+    font-family: Test_Fonts4;
+    src: url("/Module1_test/Font/WorkSans-SemiBold.woff");
+}
+/* css for header  */
+
+header {
+    background-color: #043F2E;
+}
+
+/* css for universal container class */
+.container {
+    max-width: 1240px;
+    margin: 0 auto;
+    padding: 0 15px;
+
+    @media screen and (max-width:767px) {
+        padding: 0 25px;
+    }
+}
+
+/* css for msg on the top  */
+.learn_more_msg {
+    background-color: #C8F169;
+    padding: 20px 0;
+    color: #043F2E;
+}
+
+.learn_more_msg>.container {
+    display: flex;
+    justify-content: center;
+}
+
+.learn_more_msg a {
+    color: #043F2E;
+}
+
+.learn_more_msg i {
+    position: absolute;
+    right: 30px;
+    top: 20px;
+    color: #043F2E;
+}
+
+/* css for nav  */
+nav {
+    display: flex;
+    justify-content: space-between;
+    background-color: #eef2e3;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    padding: 15px 15px 10px 15px !important;
+}
+
+/* css for navbar options */
+.nav_comp {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-right: 40px;
+    gap: 20px;
+}
+
+/* css for anchor tag in navbar  */
+.nav_comp a {
+    color: #043F2E;
+    text-decoration: none;
+}
+
+/* css for universal button  */
+button {
+    padding: 11px 23px;
+    border-radius: 5px;
+    background-color: transparent;
+}
+
+nav button:hover {
+    background-color: #043F2E;
+    color: #FFFFFF;
+}
+
+/* main css  */
+main {
+    padding-top: 30px;
+    background-color: #043F2E;
+}
+
+/* css for 1st page  */
+.home_page {
+    padding: 0 40px;
+    display: grid;
+    grid-template-rows: auto auto auto auto auto;
+    gap: 20px;
+
+}
+
+/* css for box 1 */
+.box1 {
+    grid-row: 1/3;
+    grid-column: 4/5;
+    padding-right: 33px;
+    margin-top: 40px;
+    height: 200px;
+    width: 220px;
+    background-color: #2A6B2C;
+    color: #C8F169;
+    border-radius: 15px;
+    transform: translateX(-50px);
+
+}
+
+
+/* css for box 2 */
+.box2 {
+    grid-column: 1/4;
+    grid-row: 1/2;
+    overflow: hidden;
+    overflow-wrap: break-word;
+    gap: 0;
+    border-bottom: 20px solid #043F2E;
+    transform: translateY(40px);
+}
+
+/* css for box 3 */
+.box3 {
+    grid-column: 2/4;
+    grid-row: 2/3;
+    gap: 0;
+    margin-left: 196px;
+    border-top-right-radius: 0;
+    border-bottom: 20px solid #043F2E;
+    border-left: 20px solid #043F2E;
+}
+
+/* css for box 4 */
+.box4 {
+    grid-column: 3/5;
+    grid-row: 3/4;
+    gap: 0;
+    transform: translateY(-40px);
+}
+/* css for h1 tag box 4 */
+.box4 h1 {
+    border-radius: 10px;
+    margin-left: 70px;
+    
+}
+/* css for box 5 */
+.box5 {
+    grid-row: 2/5;
+    grid-column: 1/3;
+    overflow: hidden;
+    z-index: 0;
+}
+
+/* css for box 6 */
+.box6 {
+    color: #FFFFFF;
+    grid-row: 4/5;
+    grid-column: 3/5;
+    
+}
+
+.graph h2 {
+    font-size: 35px;
+    font-weight: 100;
+}
+.box2,
+.box3,
+.box4 {
+    font-size: 50px;
+    color: #043F2E;
+    /* width: fit-content; */
+    z-index: 1;
+    /* border-radius: 20px; */
+    background-color: #C8F169;
+}
+
+
+.box2,
+.box3,
+.box4 h1 {
+    background-color: #C8F169;
+    width: fit-content;
+}
+/* buttons in grid  */
+.btns_grid {
+    display: flex;
+    gap: 20px;
+    padding-top: 20px;
+}
+/* buttons in grid  */
+.btns_grid button {
+    border: 1px solid #FFFFFF;
+    color: #FFFFFF;
+}
+
+.btns_grid button:hover {
+    background-color: #FFFFFF;
+    color: #043F2E;
+    font-weight: 700;
+}
